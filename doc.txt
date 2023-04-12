@@ -1,0 +1,18 @@
+objective: a todo list ( which will take input task from user and add it to the list section)
+
+features:
+add task
+done
+delete
+update
+
+steps:
+
+form create
+    input -> useState val
+    button -> submit
+
+list: useState()
+when form submit
+we have to set the val to the list 
+and also make a local database

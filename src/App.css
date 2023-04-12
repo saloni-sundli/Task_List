@@ -1,0 +1,109 @@
+:root{
+    --font: 'Poppins', sans-serif;
+  --color: rgba(255, 255, 255, 0.87);
+  --bg-border: rgb(46, 50, 56);
+  --bg-darker: rgb(52, 58, 64);
+  --bg-dark: rgb(60,66,74);
+  --bg-light: rgb(72,79,89);
+  --bg-lighter: rgb(163,172,185);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg-dark);
+    color: var(--color);
+    font-family: var(--font);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainInput{
+    margin-top: 25rem;
+}
+
+.maintask{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 9px 18px;
+    outline: none;
+    border-radius: 1.5px solid var(--bg-border);
+    background-color: var(--bg-dark);
+    color: var(--bg-lighter);
+    font: var(--font);
+}
+
+.fiplay{
+    font-size: 1.7rem;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.fiplay:hover{
+    color:green;
+}
+
+.main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listItem{
+    position: relative;
+}
+
+li{
+    list-style-type: none;
+    padding-bottom: -8px;
+    z-index: 1;
+    position: absolute;
+}
+
+.listtask{
+   width: 70vw;
+   padding: 9px 18px;
+   outline: none;
+   border-radius: 1.5px solid var(--bg-border);
+   background-color: var(--bg-dark);
+   color: var(--bg-lighter);
+   font: var(--font);
+   position: relative;
+}
+
+.fitrash{
+    position: absolute;
+    
+}
+
+.fiedit{
+    font-size: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.fiedit:hover{
+    color: yellow;
+}
+
+.fitrash{
+    font-size: 1.4rem;
+    z-index: 1;
+    border: 1px solid gray;
+    border-radius: 4px;
+    position: absolute;
+}
